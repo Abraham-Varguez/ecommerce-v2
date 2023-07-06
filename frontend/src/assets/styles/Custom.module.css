@@ -1,0 +1,23 @@
+/* custom-styles.css */
+
+/* EXAMPLE ON HOW TO EDIT A REACT BOOTSTRAP COMPONENT ON YOUR OWN  
+
+import styles from '../assets/styles/Custom.module.css'
+
+const MyComponent = () => {
+  return (
+    <Button className={styles.example}>
+      Custom Button
+    </Button>
+  );
+} 
+*/
+
+.logo {
+  height: 4.5rem;
+  margin-right: 1.5rem;
+}
+
+.productImg {
+  height: 14rem;
+}
