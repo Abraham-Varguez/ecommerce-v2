@@ -1,30 +1,75 @@
-html{
-  font-size: 100%;  /* 16px = 1 rem*/ 
+html {
+  font-size: 100%; /* 16px = 1 rem*/
+  font: sans-serif;
+}
+
+#root {
+  background: #0c0c0c;
+  color: aliceblue;
 }
 
 main {
   min-height: 80vh;
+  /* min-width: 100vw; */
+  background: #0c0c0c;
+  color: aliceblue;
 }
 
-.rating span {
-  margin: 0.1rem;
+/* backgrounds------------------------------------------------------------------------------------------------------------------ */
+/* HomeScreen component  */
+.home-bg {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.626),
+      rgba(0, 0, 0, 0.935)
+    ),
+    url("../images/home-cover.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.rating svg {
-  color: #f8e825;
+/* Font Awesome Icons ------------------------------------------------------------------------------------------------------------------ */
+a svg {
+  margin-right: 0.4rem;
 }
 
-.rating-text {
-  font-size: 0.8rem;
-  font-weight: 600;
-  padding-left: 0.5rem;
+/* Link in header------------------------------------------------------------------------------------------------------------------ */
+.nav-link {
+  margin: 0 0.5rem !important;
+  font-size: 1.2rem;
 }
 
-.product-title {
-  height: 2.5em; /* Set a fixed height */
-  overflow: hidden; /* Hide overflow content */
-  text-overflow: ellipsis; /* Add ellipsis for long text */
-  white-space: nowrap; /* Prevent wrapping */
+/* ContactScreen Compmonent------------------------------------------------------------------------------------------------------------------ */
+
+.contact__form .form-control {
+  padding: 1rem 0.5rem;
+  line-height: 1.5;
+  color: #0c0c0c;
+  border-radius: 0 !important;
+  border: 1px solid #fff;
+}
+
+.contact__form input.form-control {
+  margin-bottom: 2em;
+  height: calc(2.5em + 0.75rem + 2px);
+}
+
+.btn {
+  color: aliceblue;
+  border: 2px solid;
+  background-color: #0c0c0c;
+}
+
+.btn:hover {
+  color: black;
+  background-color: aliceblue;
+  border: 2px solid;
+}
+
+/*ProductScreen Component------------------------------------------------------------------------------------------------------------------ */
+.list-group-flush > .list-group-item:last-child {
+  margin: auto;
 }
 
 table td,
