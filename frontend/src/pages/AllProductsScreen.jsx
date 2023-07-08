@@ -1,10 +1,22 @@
-import React from "react";
+import { useEffect, useState } from "react";
+import axios from "axios";
 import { Row, Col } from "react-bootstrap";
-import products from "../products";
 import Product from "../components/Product";
 import styles from "../assets/styles/Custom.module.css";
 
 const AllProductsScreen = () => {
+  //The usestate will be the base on how we can use the product variable in out html rendering
+  const [products, setProducts] = useState([]);
+
+  //We use useEffect to help receive any information from the backend
+  useEffect(() => {
+    //This function will now get the product information from the backend using async await
+    const fetchProducts = async () => {
+      const { data } = await axios.get("/api/products");
+      setProducts(data);
+    };
+    fetchProducts();
+  }, []);
   return (
     <>
       <div className="p-3">

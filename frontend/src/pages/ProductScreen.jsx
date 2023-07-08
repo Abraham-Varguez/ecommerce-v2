@@ -1,18 +1,26 @@
-import React from "react";
 import { useParams } from "react-router-dom";
-import products from "../products";
+import axios from "axios";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { TiShoppingCart } from "react-icons/ti";
 import { Row, Col, Image, ListGroup, Card, Button } from "react-bootstrap";
 import Rating from "../components/Rating";
 
 const ProductScreen = () => {
+  const [product, setProducts] = useState({});
+
   // This varaible is checking the id of the url
   const { id: productId } = useParams();
   //   While this product variable is veryfying which product we have by comparing with
   //   url productID and the actual id key value in the product array in the imported js file
-  const product = products.find((p) => p._id === productId);
-  console.log(product);
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      const { data } = await axios.get(`/api/products/${productId}`);
+      setProducts(data);
+    };
+    fetchProducts();
+  }, [productId]);
 
   return (
     <>
