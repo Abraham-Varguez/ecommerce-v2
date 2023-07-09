@@ -1,6 +1,5 @@
 const products = [
   {
-    _id: "1",
     name: "Solar Panels",
     image: "/images/solar01.jpg",
     description:
@@ -13,7 +12,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: "2",
     name: "Solar Batteries",
     image: "/images/solar02.webp",
     description:
@@ -26,7 +24,6 @@ const products = [
     numReviews: 8,
   },
   {
-    _id: "3",
     name: "Solar Charge Controllers",
     image: "/images/solar03.jpeg",
     description:
@@ -39,7 +36,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: "4",
     name: "Solar Inverters",
     image: "/images/solar04.jpeg",
     description:
@@ -52,7 +48,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: "5",
     name: "Solar Water Heaters",
     image: "/images/solar05.jpeg",
     description:
@@ -65,7 +60,6 @@ const products = [
     numReviews: 10,
   },
   {
-    _id: "6",
     name: "Solar Lights",
     image: "/images/solar06.jpg",
     description:
@@ -78,7 +72,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: "7",
     name: "Solar Chargers",
     image: "/images/solar07.jpeg",
     description:
@@ -91,7 +84,6 @@ const products = [
     numReviews: 10,
   },
   {
-    _id: "8",
     name: "Solar Generators",
     image: "/images/solar08.jpeg",
     description:
@@ -104,7 +96,6 @@ const products = [
     numReviews: 15,
   },
   {
-    _id: "9",
     name: "Solar Fans",
     image: "/images/solar09.webp",
     description:
@@ -117,7 +108,6 @@ const products = [
     numReviews: 4,
   },
   {
-    _id: "10",
     name: "Solar Air Conditioners",
     image: "/images/solar10.jpeg",
     description:
@@ -130,7 +120,6 @@ const products = [
     numReviews: 18,
   },
   {
-    _id: "11",
     name: "Solar Backpacks",
     image: "/images/solar11.jpeg",
     description:
@@ -143,7 +132,6 @@ const products = [
     numReviews: 10,
   },
   {
-    _id: "12",
     name: "Solar-Powered Water Pumps",
     image: "/images/solar12.jpeg",
     description:
