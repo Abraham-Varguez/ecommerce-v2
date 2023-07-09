@@ -36,3 +36,15 @@ To download: Run `npm install concurrently` in your terminal.
 
 Description: Promise-based HTTP client for making HTTP requests from your React application.
 To download: Run `npm install axios` in your terminal.
+
+## .env File Usage
+
+The `.env` file is used to store environment variables for your project, such as API keys or configuration settings. Create a `.env` file in the project's root directory and define variables using the `KEY=VALUE` format. Access these variables in your code using `process.env.VARIABLE_NAME`, after installing and configuring the `dotenv` library.
+
+
+## MongoDB
+Description: A popular NoSQL database used for storing and retrieving data in a flexible JSON-like format.
+
+## Mongoose
+Description: A JavaScript library that provides an elegant and straightforward way to work with MongoDB within Node.js applications.
+To download: Run npm install mongoose in your terminal.
