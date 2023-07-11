@@ -7,7 +7,7 @@ import Rating from "./Rating";
 //This is where we will render thr HTML and get the Product information as well
 const Product = ({ product }) => {
   return (
-    <Card className="bg-dark text-light my-4 p-3 rounded">
+    <Card border="info" className="bg-dark text-light my-4 p-3 rounded " style={{width : '21rem'}}>
       {/* Image of Product  */}
       <Link to={`/product/${product._id}`}>
         <Card.Img

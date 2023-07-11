@@ -55,3 +55,12 @@ To download: Run `npm install redux` in your terminal.
 ## .env File Usage
 
 The `.env` file is used to store environment variables for your project, such as API keys or configuration settings. Create a `.env` file in the project's root directory and define variables using the `KEY=VALUE` format. Access these variables in your code using `process.env.VARIABLE_NAME`, after installing and configuring the `dotenv` library.
+
+# Project Overview
+
+- Initially, the `product.js` file was located in the frontend.
+- It was then moved to the backend, where it could be fetched using HTTP requests.
+- A database was created to store the product data, establishing a connection between the backend and the database.
+- In the upcoming stage, Redux and API slices will be implemented to fetch the products efficiently.
+
+Please refer to the project's code and documentation for more detailed information on how these components and processes are implemented.

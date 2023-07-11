@@ -11,6 +11,8 @@ import {
 import "./assets/styles/index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { Provider } from "react-redux";
+import store from "./store";
 //Route Imports
 import HomeScreen from "./pages/HomeScreen";
 import ProductScreen from "./pages/ProductScreen";
@@ -33,8 +35,10 @@ const router = createBrowserRouter(
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    {/* This is whar the index will look like for now on since we are using Routes tpo create the pages now  */}
-    <RouterProvider router={router} />
+    <Provider store={store}>
+      {/* This is whar the index will look like for now on since we are using Routes tpo create the pages now  */}
+      <RouterProvider router={router} />
+    </Provider>
   </React.StrictMode>
 );
 
