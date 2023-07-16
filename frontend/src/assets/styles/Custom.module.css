@@ -42,6 +42,14 @@ const MyComponent = () => {
   text-overflow: ellipsis; /* Add ellipsis for long text */
   white-space: nowrap; /* Prevent wrapping */
 }
+/* Product Carousel component ------------------------------------------------------------------------------------------------------------------ */
+.carousel {
+  margin-bottom: 3rem;
+  background-color: rgba(27, 27, 27, 0.772);
+}
+.productCarImg {
+  height: 32rem;
+}
 
 /* Rating component ------------------------------------------------------------------------------------------------------------------ */
 

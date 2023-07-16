@@ -1,15 +1,20 @@
+//The reason this looks cleaner is cause we wrote most of the logic in the controller js file
+
 import express from "express";
 const router = express.Router();
-import {getProducts, getProductById} from '../controllers/productController.js'
+import {
+  getProducts,
+  getProductById,
+  getTopProducts,
+  getAllProducts,
+} from "../controllers/productController.js";
 
-router.route('/').get(getProducts)
-
-router.route('/:id').get(getProductById)
-
-
+router.route("/").get(getProducts);
+router.route("/all-products").get(getAllProducts);
+router.get("/top", getTopProducts);
+router.route("/:id").get(getProductById);
 
 export default router;
-
 
 //Orginal Written Code w/o a Controller FILE
 // router.get(
@@ -35,5 +40,3 @@ export default router;
 //     }
 //   })
 // );
-
-

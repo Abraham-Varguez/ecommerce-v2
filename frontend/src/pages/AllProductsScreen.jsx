@@ -1,4 +1,4 @@
-import { useGetProductsQuery } from "../slices/prodcutsApiSlice";
+import { useGetAllProductsQuery } from "../slices/prodcutsApiSlice";
 import Loader from "../components/Loader";
 import Message from "../components/Message";
 import { Row, Col } from "react-bootstrap";
@@ -6,7 +6,8 @@ import Product from "../components/Product";
 import styles from "../assets/styles/Custom.module.css";
 
 const AllProductsScreen = () => {
-  const { data: products, isLoading, error } = useGetProductsQuery();
+  const { data: products, isLoading, error } = useGetAllProductsQuery();
+
   return (
     <>
       {isLoading ? (

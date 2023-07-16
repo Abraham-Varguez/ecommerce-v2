@@ -15,8 +15,7 @@ main {
   color: aliceblue;
 }
 
-/* backgrounds------------------------------------------------------------------------------------------------------------------ */
-/* HomeScreen component  */
+/* HomeScreen component ------------------------------------------------------------------------------------------------------------------  */
 .home-bg {
   background: linear-gradient(
       to bottom,
@@ -28,6 +27,25 @@ main {
   background-position: center;
   background-size: cover;
 }
+/* Carousel Component  */
+.carousel-caption {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+/* Pagination  */
+.page-link {
+  background-color: #343a40;
+  border-color: #191c1f;
+}
+.page-link:hover {
+  background-color: #5a646f;
+  border-color: #343a40;
+  color: aliceblue;
+}
 
 /* Font Awesome Icons ------------------------------------------------------------------------------------------------------------------ */
 a svg {
@@ -37,7 +55,7 @@ a svg {
 /* Link in header------------------------------------------------------------------------------------------------------------------ */
 .nav-link {
   margin: 0 0.5rem !important;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 /* ContactScreen Compmonent------------------------------------------------------------------------------------------------------------------ */
@@ -69,34 +87,17 @@ a svg {
 
 /*ProductScreen Component------------------------------------------------------------------------------------------------------------------ */
 .list-group-flush > .list-group-item:last-child {
+  padding-top: 2rem;
+  background: transparent;
   margin: auto;
+}
+
+.list-group-item {
+  background: transparent;
+  color: aliceblue;
 }
 
 table td,
 table th {
   text-align: center;
-}
-
-.review {
-  margin-top: 30px;
-}
-
-.review h2 {
-  font-size: 24px;
-  background: #f4f4f4;
-  padding: 10px;
-  border: 1px solid #ddd;
-}
-
-.review button {
-  margin-top: 10px;
-}
-
-.carousel-caption {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
 }

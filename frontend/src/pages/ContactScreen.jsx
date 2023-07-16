@@ -1,8 +1,23 @@
 import { Container, Row, Col } from "react-bootstrap";
 import contact from "../contact";
+// import { useGetContactQuery } from "../slices/contactApiSlice";
+// import Loader from "../components/Loader";
+// import Message from "../components/Message";
+
+// *************NEED TO FIX********************
 
 const ContactScreen = () => {
+  // const { data, isLoading, error } = useGetContactQuery();
+
   return (
+    // <>
+    //   {isLoading ? (
+    //     <Loader />
+    //   ) : error ? (
+    //     <Message variant="danger">
+    //       {error?.data?.message || error.error}
+    //     </Message>
+    //   ) : (
     <Container className="vh-88 pt-3">
       <Row className="mb-5 mt-3">
         <Col lg="8">
@@ -65,6 +80,8 @@ const ContactScreen = () => {
         </Col>
       </Row>
     </Container>
+    //   )}
+    // </>
   );
 };
 
