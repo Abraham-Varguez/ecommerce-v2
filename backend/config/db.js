@@ -8,7 +8,7 @@ const connectDB = async () => {
   } catch (error) {
     console.log(`Error: ${error.message}`);
     //This help stop the connection process in case there is a huge error that crashes the servers
-    proccess.exit(1);
+    process.exit(1);
   }
 };
 
