@@ -101,3 +101,12 @@ table td,
 table th {
   text-align: center;
 }
+
+/*ProductScreen Component------------------------------------------------------------------------------------------------------------------ */
+.form-range {
+  width: 25vw;
+  height: 1.5rem;
+  padding: 0;
+  background-color: transparent;
+  appearance: none;
+}

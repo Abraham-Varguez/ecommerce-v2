@@ -78,7 +78,10 @@ button svg {
   font-size: 5rem;
   margin: 2rem 0;
 }
-
+.slider {
+  display: flex;
+  flex-direction: column;
+}
 /* Footer component ------------------------------------------------------------------------------------------------------------------ */
 
 .footer {
