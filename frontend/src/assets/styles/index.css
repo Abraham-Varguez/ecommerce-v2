@@ -1,0 +1,112 @@
+html {
+  font-size: 100%; /* 16px = 1 rem*/
+  font: sans-serif;
+}
+
+#root {
+  background: #0c0c0c;
+  color: aliceblue;
+}
+
+main {
+  min-height: 80vh;
+  /* min-width: 100vw; */
+  background: #0c0c0c;
+  color: aliceblue;
+}
+
+/* HomeScreen component ------------------------------------------------------------------------------------------------------------------  */
+.home-bg {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.626),
+      rgba(0, 0, 0, 0.935)
+    ),
+    url("../images/home-cover.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/* Carousel Component  */
+.carousel-caption {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+/* Pagination  */
+.page-link {
+  background-color: #343a40;
+  border-color: #191c1f;
+}
+.page-link:hover {
+  background-color: #5a646f;
+  border-color: #343a40;
+  color: aliceblue;
+}
+
+/* Font Awesome Icons ------------------------------------------------------------------------------------------------------------------ */
+a svg {
+  margin-right: 0.4rem;
+}
+
+/* Link in header------------------------------------------------------------------------------------------------------------------ */
+.nav-link {
+  margin: 0 0.5rem !important;
+  font-size: 1.3rem;
+}
+
+/* ContactScreen Compmonent------------------------------------------------------------------------------------------------------------------ */
+
+.contact__form .form-control {
+  padding: 1rem 0.5rem;
+  line-height: 1.5;
+  color: #0c0c0c;
+  border-radius: 0 !important;
+  border: 1px solid #fff;
+}
+
+.contact__form input.form-control {
+  margin-bottom: 2em;
+  height: calc(2.5em + 0.75rem + 2px);
+}
+
+.btn {
+  color: aliceblue;
+  border: 2px solid;
+  background-color: #0c0c0c;
+}
+
+.btn:hover {
+  color: black;
+  background-color: aliceblue;
+  border: 2px solid;
+}
+
+/*ProductScreen Component------------------------------------------------------------------------------------------------------------------ */
+.list-group-flush > .list-group-item:last-child {
+  padding-top: 2rem;
+  background: transparent;
+  margin: auto;
+}
+
+.list-group-item {
+  background: transparent;
+  color: aliceblue;
+}
+
+table td,
+table th {
+  text-align: center;
+}
+
+/*ProductScreen Component------------------------------------------------------------------------------------------------------------------ */
+.form-range {
+  width: 25vw;
+  height: 1.5rem;
+  padding: 0;
+  background-color: transparent;
+  appearance: none;
+}

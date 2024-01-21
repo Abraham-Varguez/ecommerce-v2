@@ -1,0 +1,109 @@
+/* EXAMPLE ON HOW TO EDIT A REACT BOOTSTRAP COMPONENT ON YOUR OWN  
+
+import styles from '../assets/styles/Custom.module.css'
+
+const MyComponent = () => {
+  return (
+    <Button className={styles.example}>
+      Custom Button
+    </Button>
+  );
+} 
+*/
+
+/* Header component  ------------------------------------------------------------------------------------------------------------------ */
+.logo {
+  height: 4.5rem;
+  margin-right: 1.5rem;
+}
+
+.navBar {
+  background: linear-gradient(
+    180deg,
+    hsla(0, 0%, 0%, 1) 98%,
+    rgb(57, 57, 255) 88%,
+    rgb(246, 129, 185) 100%
+  ) !important;
+  color: aliceblue !important;
+}
+
+.brandTitle {
+  font-size: 2.2rem !important;
+}
+
+/* Product component ------------------------------------------------------------------------------------------------------------------ */
+.productImg {
+  height: 14rem;
+}
+
+.productTitle {
+  height: 2.5em; /* Set a fixed height */
+  overflow: hidden; /* Hide overflow content */
+  text-overflow: ellipsis; /* Add ellipsis for long text */
+  white-space: nowrap; /* Prevent wrapping */
+}
+/* Product Carousel component ------------------------------------------------------------------------------------------------------------------ */
+.carousel {
+  margin-bottom: 3rem;
+  background-color: rgba(27, 27, 27, 0.772);
+}
+.productCarImg {
+  height: 32rem;
+}
+
+/* Rating component ------------------------------------------------------------------------------------------------------------------ */
+
+.rating span {
+  margin: 0.1rem;
+}
+
+.rating svg {
+  color: #f8e835;
+}
+
+.ratingText {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding-left: 0.5rem;
+}
+/* ProductScreen component  ------------------------------------------------------------------------------------------------------------------ */
+button svg {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+}
+/* AllProductScreen component ------------------------------------------------------------------------------------------------------------------ */
+
+.prodTitle {
+  text-align: center;
+  font-size: 5rem;
+  margin: 2rem 0;
+}
+.slider {
+  display: flex;
+  flex-direction: column;
+}
+/* Footer component ------------------------------------------------------------------------------------------------------------------ */
+
+.footer {
+  background: linear-gradient(
+    0deg,
+    hsla(0, 0%, 0%, 1) 98%,
+    blue 88%,
+    rgb(255, 118, 184) 100%
+  ) !important;
+  color: aliceblue;
+}
+
+.footerFonts {
+  font-size: 1.5rem;
+}
+
+.footerFont {
+  margin: 0 1rem;
+  color: aliceblue !important;
+}
+
+.footerFont:hover {
+  color: rgb(159, 57, 255) !important;
+  transition: 0.3s ease-in;
+}
