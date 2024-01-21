@@ -26,11 +26,8 @@ app.use("/api/users", userRoutes);
 
 const __dirname = path.resolve();
 
-console.log(process.env.NODE_ENV)
-
 if (process.env.NODE_ENV === "production") {
   //Set static folder
-
   app.use(express.static(path.join(__dirname, "/frontend/build")));
 
   //any route that is not api will be redirected to index.html
